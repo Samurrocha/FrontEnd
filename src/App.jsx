@@ -9,18 +9,18 @@ function App() {
     setIsBlurred(false); // Remove o borrão ao clicar no botão
   };
 
-const captureValue = (id) =>{
-      let valor = document.getElementById(`${id}`);
-      valor = valor.value;
-      return valor;
-      
-    }
+  const captureValue = (id) => {
+    let valor = document.getElementById(`${id}`);
+    valor = valor.value;
+    return valor;
+
+  }
 
   const submit = () => {
-  
+
     alert(`curriculo enviado com sucesso,${captureValue("nome")}`);
   }
-  
+
   return (
     <>
 
@@ -38,7 +38,7 @@ const captureValue = (id) =>{
         <form action="" method="get" className='form'>
 
           <div className='pergunta'>
-            <label htmlFor='name'>Qual é o seu nome?</label>
+            <label htmlFor='name'>react é utilizado no frontEnd e/ou backEnd?</label>
             <input type="text" name="name" id="nome" placeholder='digite seu nome' />
           </div>
 
@@ -60,10 +60,194 @@ const captureValue = (id) =>{
           </div>
 
 
-          <div className='pergunta'>
-            <label htmlFor='userLife' className='userLife'>conte um pouco sobre o porque se interessou pela nossa empresa</label>
-            <input type='text' className="userLife" id="userLife" placeholder='digite seus principais conhecimentos'></input>
+          <div className='pergunta' id='radio'>
+
+
+            
+            <label>Como você acessa uma prop chamada title dentro de um componente React?</label>
+            
+          <div className='opções'>
+            
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="props.title"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                props.title</label>
+            
+            
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                this.props.title</label>
+          
+          
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                title</label>
+            
+           
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                this.title</label>
+            
+                </div>
+
+
           </div>
+
+          <div className='pergunta' id='radio'>
+            
+            <label>Como você acessa uma prop chamada title dentro de um componente React?</label>
+            
+          <div className='opções'>
+            
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="props.title"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                props.title</label>
+            
+            
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                this.props.title</label>
+          
+          
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                title</label>
+            
+           
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                this.title</label>
+            
+                </div>
+
+
+          </div>
+
+
+          <div className='pergunta' id='radio'>
+
+
+            
+            <label>Como você acessa uma prop chamada title dentro de um componente React?</label>
+            
+          <div className='opções'>
+            
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="props.title"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                props.title</label>
+            
+            
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                this.props.title</label>
+          
+          
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                title</label>
+            
+           
+              <label>
+                <input
+                  type="radio"
+                  name='opção'
+                  className='opção'
+                  value="opção"
+                //checked={selectedOption === 'opcao1'}
+                //onChange={handleOptionChange}
+                />
+                this.title</label>
+            
+                </div>
+
+
+          </div>
+
+
+
+          
+
+
+            
+
+
+
 
 
 
@@ -75,10 +259,10 @@ const captureValue = (id) =>{
 
       </div>
 
-        <section id='maker'>
-          <p >Feito por samuel rodrigues da rocha lima</p>
-        </section>
-  
+      <section id='maker'>
+        <p >Feito por samuel rodrigues da rocha lima</p>
+      </section>
+
     </>
   )
 }
