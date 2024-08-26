@@ -5,9 +5,14 @@
   text-align: center;
 }
 
+#body {
+  width: 90vw;
+  margin: 0 auto;
+  
+}
 
-#title{
-  width: 100vw;
+#title {
+  
   border: 5px solid #000;
   border-radius: 30px;
   box-shadow: inset 0px 0px 30px;
@@ -15,24 +20,39 @@
 
 
 .form {
-  width: 100vw;
-  margin: 0 auto; 
-  height: 400x;  
-  padding: 1rem; 
+  
+  margin: 0 auto;
+  height: 400x;
+  padding: 1rem;
   box-shadow: 0px 0px 2px 3px rgba(0, 0, 0, 0.6);
   border-radius: 15px;
 }
 
-.opções{
+.opções {
   display: flex;
-  margin-top: 100px;
 }
 
-.opções label{
-  margin: 0 auto ;
-  background-color: aqua;
-  border: #000 solid 2px;
+.opção{
+  margin-top: 20px;
+  height: 20px;
+}
+
+.opções label {
+  margin: 0 auto;
+  background-color: grey;
+  border: #020202 solid 2px;
   border-radius: 20px;
+  font-size: larger;
+
+}
+
+#option1{
+ border-color: green;
+  border-radius: 10px;
+  
+}
+
+#option1{
 
 }
 
@@ -42,7 +62,7 @@
   width: 100vw;
   filter: blur(6px);
   height: 100%vh;
-  
+
 }
 
 .button {
@@ -56,30 +76,31 @@ button:hover {
 }
 
 .pergunta {
-  margin-bottom: 1rem;
+  margin-bottom: 10rem;
 }
 
-label{
+.pergunta label{
   font-size: 30px;
   font-weight: bold;
   display: block;
-  margin-bottom: 0.5rem;
-  
+  margin-bottom: 2.0rem;
 }
 
-input{
+
+
+input {
   width: 100%;
   box-sizing: border-box;
   margin-bottom: 1.5rem;
 }
 
-#submit{
+#submit {
   border: green solid 2px;
 }
 
 
-#maker{
-  width: 100vw;
+#maker {
+ 
   font-size: 20px;
   font-weight: bolder;
   border: #000 solid 2px;
@@ -94,6 +115,7 @@ input{
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
