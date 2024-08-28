@@ -162,12 +162,12 @@ function App() {
           <div className='login'>
 
             <h1>LOGAR</h1>
-            <label htmlFor="email">Email:
-              <input type="email" name="email" id="email" placeholder='exemplo@gmail.com' />
+            <label htmlFor="name">Nome:
+              <input type="text" name="name" id="name" placeholder='nome' />
             </label>
 
-            <label htmlFor="senha">Senha:
-              <input type="password" name="senha" id="senha" placeholder='********' />
+            <label htmlFor="matricula">matricula:
+              <input type="number" name="matricula" id="matricula" placeholder='matricula' />
             </label>
 
             <button id='buttonLogar' onClick={starQuestionarie}>Logar</button>
